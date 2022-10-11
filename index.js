@@ -4,6 +4,7 @@ const app = express()
 var http = require('http');
 
 app.set('port', process.env.PORT || 3000);
+console.log(process.env.PORT, "******");
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
   res.send('hello world')
